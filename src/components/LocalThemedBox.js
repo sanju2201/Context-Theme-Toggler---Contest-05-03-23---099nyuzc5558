@@ -7,6 +7,7 @@ const LocalThemedBox = () => {
     const { theme } = useContext(ThemeContext);
 
     const [localTheme, setLocalTheme] = useState(theme);
+    
     const initial = localTheme === 'dark' ? 'Toggle local theme to light' : 'Toggle local theme to dark';
     const [localBtn, setLocalBtn] = useState(initial);
 
