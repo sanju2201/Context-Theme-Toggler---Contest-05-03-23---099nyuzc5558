@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 
 const ThemeContext = React.createContext()
 const ThemeProvider = (props) => {
-
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState('light')
     return (
         <React.Fragment>
             <ThemeContext.Provider value={{ theme, setTheme }}>
@@ -13,4 +12,4 @@ const ThemeProvider = (props) => {
     )
 }
 
-export { ThemeProvider, ThemeContext }
+export { ThemeProvider, ThemeContext
