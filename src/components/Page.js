@@ -3,7 +3,6 @@ import { LocalThemedBox } from './LocalThemedBox';
 import { ThemeContext, ThemeProvider } from './ThemeProvider';
 
 const Page = () => {
-
     const { theme, setTheme } = useContext(ThemeContext);
 
     return (
@@ -12,12 +11,15 @@ const Page = () => {
                 lorem ipsum dolor iterit n stuff
             </p>
             {/* 'btn btn-'+theme 'txt-'+theme */}
-            <button className={`btn btn-${theme} txt-${theme}`} id="themed-button">Themed Button</button>
+            <button
+                className={`btn btn-${theme} txt-${theme}`}
+                id="themed-button">
+                Themed Button
+            </button>
 
             <LocalThemedBox />
-
         </div>
-    )
-}
+    );
+};
 
-export { Page }
+export { Page };

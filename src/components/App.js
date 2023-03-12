@@ -5,7 +5,6 @@ import { ThemeToggleButton } from './ThemeToggleButton';
 import { Page } from './Page'
 const App = () => {
 
-
   return (
     <div id="main">
       <ThemeProvider>
